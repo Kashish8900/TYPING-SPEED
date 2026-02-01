@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Typing Speed Test</title>
+<link rel="stylesheet" href="typing.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>⌨️ Typing Speed Test</h1>
+
+  <label for="level">Select Level:</label>
+  <select id="level">
+    <option value="easy">Easy</option>
+    <option value="medium">Medium</option>
+    <option value="hard">Hard</option>
+  </select>
+
+  <button id="refresh">🔄 Refresh Paragraph</button>
+
+  <div id="text"></div>
+  <textarea id="input" placeholder="Start typing here..." disabled></textarea>
+
+  <div class="stats">
+    <div>⏱ Time: <span id="time">60</span>s</div>
+    <div>⚡ WPM: <span id="wpm">0</span></div>
+    <div>🎯 Accuracy: <span id="accuracy">0</span>%</div>
+  </div>
+
+  <button id="start">Start</button>
+
+  <div class="final-result" id="result">
+    <h3>🏁 Test Completed!</h3>
+    <p id="finalWPM"></p>
+    <p>Accuracy: <span id="finalAccuracy"></span>%</p>
+    <p>Errors: <span id="errors"></span></p>
+  </div>
+</div>
+
+<script src="typing.js"></script>
+</body>
+</html>
